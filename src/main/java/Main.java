@@ -4,7 +4,8 @@
 public class Main {
 
     public static void main(String[] args) {
-        MultipleRegression lm = new MultipleRegression("C:\\Users\\Trenton Beckendorff\\Documents\\Data Science\\Data Sets\\Advertising.csv");
+        String path = args[0];
+        MultipleRegression lm = new MultipleRegression(path);
 
         MatrixOperations ops = new MatrixOperations();
         System.out.println("Inputs: \n");
